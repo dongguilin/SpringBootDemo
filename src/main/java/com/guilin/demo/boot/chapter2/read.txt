@@ -1,0 +1,17 @@
+1.devtools依赖
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+2.plugin
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <fork>true</fork>
+            </configuration>
+        </plugin>
+3.idea自动编译
+        ctrl+alt+shift+/  打开registry  勾选compile.automake.allow.when.app.running
+4.Settings->Build->Compiler  勾选Build project automatically
+

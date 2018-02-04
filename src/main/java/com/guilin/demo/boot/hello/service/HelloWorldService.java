@@ -1,4 +1,4 @@
-package demo.boot.hello.service;
+package com.guilin.demo.boot.hello.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
