@@ -1,7 +1,5 @@
 package demo.boot.hello;
 
-import demo.boot.hello.service.HelloWorldService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -23,13 +21,6 @@ public class SampleSimpleApplication implements CommandLineRunner {
     // injected bean service. Also demonstrates how you can use @Value to inject
     // command line args ('--name=whatever') or application properties
 
-    @Autowired
-    private HelloWorldService helloWorldService;
-
-    @Override
-    public void run(String... args) {
-        System.out.println(this.helloWorldService.getHelloMessage());
-    }
 
     public static void main(String[] args) throws Exception {
         SpringApplication application = new SpringApplication(
@@ -46,4 +37,8 @@ public class SampleSimpleApplication implements CommandLineRunner {
         return scheduler;
     }
 
+    @Override
+    public void run(String... strings) throws Exception {
+
+    }
 }
